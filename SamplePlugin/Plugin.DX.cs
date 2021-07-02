@@ -116,14 +116,14 @@ namespace SamplePlugin {
 
             Device.ImmediateContext.UpdateSubresource(ref viewProjectionMatrix, WorldBuffer);
 
-            /*Ctx.PixelShader.Set(PShader);
+            Ctx.PixelShader.Set(PShader);
             Ctx.VertexShader.Set(VShader);
             Ctx.InputAssembler.InputLayout = Layout;
             Ctx.InputAssembler.PrimitiveTopology = PrimitiveTopology.TriangleList;
             Ctx.VertexShader.SetConstantBuffer(0, WorldBuffer);
             Ctx.InputAssembler.SetVertexBuffers(0, new VertexBufferBinding(Vertices, Utilities.SizeOf<Vector4>() * 1, 0));
             Ctx.Draw(NumVerts, 0);
-            Ctx.Flush();*/
+            Ctx.Flush();
         }
 
         public void DisposeDX() {
